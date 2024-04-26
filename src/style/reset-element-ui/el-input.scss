@@ -1,0 +1,51 @@
+$el-input-height: 32px;
+$el-input-bg-color: #f1f3f4;
+$el-input-border-color: transparent;
+$el-input-color: #212121;
+$el-input-placeholder-color: #9e9e9e;
+$el-input-active-color: #1a73e8;
+$el-input-disabled-color: #9e9e9e;
+$el-input-disabled-border-color: rgba(0, 0, 0, .12);
+$el-input-disabled-opacity: .38;
+
+.el-input, .el-textarea {
+    &.is-disabled {
+        .el-input__inner, .el-textarea__inner {
+            background-color: $el-input-bg-color;
+            color: $el-input-disabled-color;
+            border-color: $el-input-disabled-border-color;
+            opacity: $el-input-disabled-opacity;
+            &:hover {
+                border-color: $el-input-disabled-border-color;
+            }
+        }
+    }
+    .el-input__inner, .el-textarea__inner {
+        background-color: $el-input-bg-color;
+        border-color: $el-input-border-color;
+        border-radius: 0;
+        color: $el-input-color;
+        &::placeholder {
+            color: $el-input-placeholder-color;
+        }
+        &:hover, &:focus {
+            border-color: $el-input-active-color;
+        }
+    }
+}
+
+.el-input {
+    .el-input__inner {
+        height: $el-input-height;
+        line-height: $el-input-height;
+        padding: 0 10px;
+        
+    }
+}
+
+.el-textarea {
+    .el-textarea__inner {
+        padding: 10px;
+        font-family: $font-family;
+    }
+}
