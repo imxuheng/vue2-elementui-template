@@ -1,6 +1,6 @@
 $ElButtonHeight: 32px;
 $ElButtonColor: #424242;
-$ElButtonBorderColor: rgba(0, 0, 0, .12);
+$ElButtonBorderColor: rgba($color-black, .12);
 
 .el-button {
     color: $ElButtonColor;
