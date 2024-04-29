@@ -1,0 +1,87 @@
+
+
+.el-select {
+    &:hover {
+        .el-input__inner {
+            border-color: $color-primary;
+        }
+    }
+    .el-input {
+        &.is-focus {
+            .el-input__inner {
+                border-color: $color-primary;
+            }
+        }
+        &.is-disabled {
+            .el-input__suffix {
+                opacity: .38;
+            }
+        }
+        .el-input__suffix {
+            .el-select__caret {
+                font-weight: 700;
+                color: #9e9e9e;
+                line-height: 32px;
+                &.el-icon-arrow-up {
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+    .el-select__tags {
+        .el-tag--light {
+            background-color: $color-primary;
+            border-color: transparent;
+            color: $color-white;
+            border-radius: 0;
+            .el-tag__close {
+                color: $color-white;
+                font-size: 14px;
+                &.el-icon-close {
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+}
+
+.el-select-dropdown {
+    border: none;
+    border-radius: 0;
+    box-shadow: 1px -1px 5px rgba(0, 0, 0, .12), 0 5px 5px rgba(0, 0, 0, .12);
+    padding: 6px 0;
+    .el-select-dropdown__list {
+        padding: 0;
+        .el-select-dropdown__item {
+            color: #424242;
+            padding: 0 16px;
+            height: 32px;
+            line-height: 32px;
+            &:hover {
+                color: $color-primary;
+            }
+            &.selected {
+                background-color: rgba(26, 115, 232, .1);
+                color: $color-primary;
+                font-weight: 500;
+            }
+            &.is-disabled {
+                color: #9e9e9e;
+                background-color: transparent;
+            }
+        }
+    }
+}
+
+.el-popper  {
+    .popper__arrow {
+        border-width: 0;
+        &::after {
+            border-width: 0;
+        }
+    }
+}
+
+.el-popper[x-placement^=bottom] {
+    margin-top: 6px;
+}
