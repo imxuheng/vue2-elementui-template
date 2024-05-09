@@ -1,0 +1,43 @@
+.el-input-number {
+    line-height: 30px;
+    &:hover {
+        .el-input__inner {
+            border-color: $color-primary !important;
+        }
+    }
+    &.is-disabled {
+        .el-input__inner {
+            border-color: rgba($color-black, .1) !important;
+            color: #9e9e9e;
+        }
+    }
+    &.is-controls-right {
+        .el-input-number__decrease,
+        .el-input-number__increase {
+            line-height: 15px;
+        }
+        .el-icon-arrow-up {
+            top: 0;
+        }
+        .el-icon-arrow-down {
+            top: 2px;
+        }
+    }
+    .el-input-number__decrease,
+    .el-input-number__increase {
+        background: transparent;
+        color: #424242;
+        width: 32px;
+        line-height: 30px;
+        position: absolute;
+        top: 1px;
+        z-index: 1;
+        border-color: rgba($color-black, .1);
+        border-radius: 0;
+        i {
+            font-weight: bold;
+            position: relative;
+            top: 1px;
+        }
+    }
+}
