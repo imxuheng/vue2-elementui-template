@@ -1,0 +1,50 @@
+.el-progress {
+    .el-progress-bar {
+        .el-progress-bar__outer {
+            border-radius: 0;
+        }
+    }
+    .el-progress-bar__inner {
+        background-color: $color-primary;
+        border-radius: 0;
+    }
+    &.is-success {
+        .el-progress-bar__inner {
+            background-color: $color-success;
+        }
+    }
+    &.is-warning {
+        .el-progress-bar__inner {
+            background-color: $color-warning;
+        }
+    }
+    &.is-exception {
+        .el-progress-bar__inner {
+            background-color: $color-danger;
+        }
+    }
+    &.el-progress--circle {
+        .el-progress-circle__track {
+            stroke-width: 6px;
+        }
+        .el-progress-circle__path {
+            stroke-width: 6px;
+            stroke: $color-primary;
+        }
+        &.is-success {
+            .el-progress-circle__path {
+                stroke: $color-success;
+            }
+        }
+        &.is-warning {
+            .el-progress-circle__path {
+                stroke: $color-warning;
+            }
+        }
+        &.is-exception {
+            .el-progress-circle__path {
+                stroke: $color-danger;
+            }
+        }
+    }
+}
