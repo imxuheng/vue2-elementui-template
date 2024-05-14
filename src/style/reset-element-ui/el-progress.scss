@@ -5,22 +5,22 @@
         }
     }
     .el-progress-bar__inner {
-        background-color: $color-primary;
+        background-color: $--color-primary;
         border-radius: 0;
     }
     &.is-success {
         .el-progress-bar__inner {
-            background-color: $color-success;
+            background-color: $--color-success;
         }
     }
     &.is-warning {
         .el-progress-bar__inner {
-            background-color: $color-warning;
+            background-color: $--color-warning;
         }
     }
     &.is-exception {
         .el-progress-bar__inner {
-            background-color: $color-danger;
+            background-color: $--color-danger;
         }
     }
     &.el-progress--circle {
@@ -29,21 +29,21 @@
         }
         .el-progress-circle__path {
             stroke-width: 6px;
-            stroke: $color-primary;
+            stroke: $--color-primary;
         }
         &.is-success {
             .el-progress-circle__path {
-                stroke: $color-success;
+                stroke: $--color-success;
             }
         }
         &.is-warning {
             .el-progress-circle__path {
-                stroke: $color-warning;
+                stroke: $--color-warning;
             }
         }
         &.is-exception {
             .el-progress-circle__path {
-                stroke: $color-danger;
+                stroke: $--color-danger;
             }
         }
     }

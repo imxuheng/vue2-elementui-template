@@ -1,6 +1,6 @@
 $ElButtonHeight: 32px;
 $ElButtonColor: #424242;
-$ElButtonBorderColor: rgba($color-black, .12);
+$ElButtonBorderColor: rgba($--color-black, .12);
 
 .el-button {
     color: $ElButtonColor;
@@ -9,9 +9,9 @@ $ElButtonBorderColor: rgba($color-black, .12);
     border-color: $ElButtonBorderColor;
     border-radius: 0;
     &:hover, &:focus {
-        background: $color-white;
-        border-color: $color-primary;
-        color: $color-primary;
+        background: $--color-white;
+        border-color: $--color-primary;
+        color: $--color-primary;
     }
     &--general {
         background: #F5F5F5;
@@ -19,57 +19,57 @@ $ElButtonBorderColor: rgba($color-black, .12);
         color: #424242;
         &:hover, &:focus {
             background: #F5F5F5;
-            border-color: $color-primary;
-            color: $color-primary;
+            border-color: $--color-primary;
+            color: $--color-primary;
         }
     }
     &--info {
-        background: $color-info;
+        background: $--color-info;
         border-color: transparent;
-        color: $color-primary;
+        color: $--color-primary;
         &:hover, &:focus {
-            background: $color-info;
-            border-color: $color-primary;
-            color: $color-primary;
+            background: $--color-info;
+            border-color: $--color-primary;
+            color: $--color-primary;
         }
     }
     &--primary {
-        background: $color-primary;
-        border-color: $color-primary;
+        background: $--color-primary;
+        border-color: $--color-primary;
         
         &:hover, &:focus {
-            background: $color-primary;
-            border-color: $color-primary;
+            background: $--color-primary;
+            border-color: $--color-primary;
         }
     }
     &--success {
-        background: $color-success;
-        border-color: $color-success;
+        background: $--color-success;
+        border-color: $--color-success;
         &:hover, &:focus {
-            background: $color-success;
-            border-color: $color-success;
+            background: $--color-success;
+            border-color: $--color-success;
         }
     }
     &--warning {
-        background: $color-warning;
-        border-color: $color-warning;
+        background: $--color-warning;
+        border-color: $--color-warning;
         &:hover, &:focus {
-            background: $color-warning;
-            border-color: $color-warning;
+            background: $--color-warning;
+            border-color: $--color-warning;
         }
     }
     &--danger {
-        background: $color-danger;
-        border-color: $color-danger;
+        background: $--color-danger;
+        border-color: $--color-danger;
         &:hover, &:focus {
-            background: $color-danger;
-            border-color: $color-danger;
+            background: $--color-danger;
+            border-color: $--color-danger;
         }
     }
     &--primary, &--success, &--warning, &--danger {
-        color: $color-white;
+        color: $--color-white;
         &:hover, &:focus {
-            color: $color-white;
+            color: $--color-white;
             opacity: .8;
         }
     }

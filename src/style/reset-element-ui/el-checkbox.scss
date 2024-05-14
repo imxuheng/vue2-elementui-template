@@ -9,7 +9,7 @@
             &.is-checked {
                 .el-checkbox__inner {
                     background-color: #e0e0e0;
-                    border: 1px solid rgba($color-black, .12);
+                    border: 1px solid rgba($--color-black, .12);
                     opacity: .38;
                     &::after {
                         border-color: #9e9e9e;
@@ -18,7 +18,7 @@
             }
             .el-checkbox__inner {
                 background-color: #e0e0e0;
-                border: 1px solid rgba($color-black, .12);
+                border: 1px solid rgba($--color-black, .12);
                 opacity: .38;
                 &::after {
                     border-color: #9e9e9e;
@@ -33,17 +33,17 @@
     .el-checkbox__input {
         &.is-checked {
             .el-checkbox__inner {
-                background-color: $color-primary;
-                border-color: $color-primary;
+                background-color: $--color-primary;
+                border-color: $--color-primary;
                 &::after {
-                    border-color: $color-white;
+                    border-color: $--color-white;
                 }
             }
         }
         .el-checkbox__inner {
             width: 16px;
             height: 16px;
-            border: 1px solid rgba($color-black, .12);
+            border: 1px solid rgba($--color-black, .12);
             border-radius: 0;
             &::after {
                 width: 5px;

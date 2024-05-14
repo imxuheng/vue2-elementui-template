@@ -3,13 +3,13 @@
 .el-select {
     &:hover {
         .el-input__inner {
-            border-color: $color-primary;
+            border-color: $--color-primary;
         }
     }
     .el-input {
         &.is-focus {
             .el-input__inner {
-                border-color: $color-primary;
+                border-color: $--color-primary;
             }
         }
         &.is-disabled {
@@ -30,12 +30,12 @@
     }
     .el-select__tags {
         .el-tag--light {
-            background-color: $color-primary;
+            background-color: $--color-primary;
             border-color: transparent;
-            color: $color-white;
+            color: $--color-white;
             border-radius: 0;
             .el-tag__close {
-                color: $color-white;
+                color: $--color-white;
                 font-size: 14px;
                 &.el-icon-close {
                     background-color: transparent;
@@ -48,7 +48,7 @@
 .el-select-dropdown {
     border: none;
     border-radius: 0;
-    box-shadow: 1px -1px 5px rgba($color-black, .12), 0 5px 5px rgba($color-black, .12);
+    box-shadow: 1px -1px 5px rgba($--color-black, .12), 0 5px 5px rgba($--color-black, .12);
     padding: 6px 0;
     .el-select-dropdown__list {
         padding: 0;
@@ -58,11 +58,11 @@
             height: 32px;
             line-height: 32px;
             &:hover {
-                color: $color-primary;
+                color: $--color-primary;
             }
             &.selected {
                 background-color: rgba(26, 115, 232, .1);
-                color: $color-primary;
+                color: $--color-primary;
                 font-weight: 500;
             }
             &.is-disabled {

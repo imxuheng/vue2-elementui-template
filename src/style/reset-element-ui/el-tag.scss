@@ -1,21 +1,21 @@
 .el-tag {
     background-color: rgba(26, 115, 232, .1);
     border-color: transparent !important;
-    color: $color-primary;
+    color: $--color-primary;
     border-radius: 0;
     .el-tag__close {
-        color: $color-primary;
+        color: $--color-primary;
         &:hover {
-            background-color: $color-primary;
+            background-color: $--color-primary;
         }
     }
     &.el-tag--success {
         background-color: rgba(52, 168, 83, .1);
-        color: $color-success;
+        color: $--color-success;
         .el-tag__close {
-            color: $color-success;
+            color: $--color-success;
             &:hover {
-                background-color: $color-success;
+                background-color: $--color-success;
             }
         }
     }
@@ -25,44 +25,44 @@
     }
     &.el-tag--warning {
         background-color: rgba(247, 168, 37, .1);
-        color: $color-warning;
+        color: $--color-warning;
         .el-tag__close {
-            color: $color-warning;
+            color: $--color-warning;
             &:hover {
-                background-color: $color-warning;
+                background-color: $--color-warning;
             }
         }
     }
     &.el-tag--danger {
         background-color: rgba(236, 65, 77, .1);
-        color: $color-danger;
+        color: $--color-danger;
         .el-tag__close {
-            color: $color-danger;
+            color: $--color-danger;
             &:hover {
-                background-color: $color-danger;
+                background-color: $--color-danger;
             }
         }
     }
     &.el-tag--dark {
-        background-color: $color-primary;
-        color: $color-white;
+        background-color: $--color-primary;
+        color: $--color-white;
         .el-tag__close {
-            color: $color-white;
+            color: $--color-white;
             &:hover {
                 background-color: hsla(0, 0%, 100%, .15);
             }
         }
         &.el-tag--success {
-            background-color: $color-success;
+            background-color: $--color-success;
         }
         &.el-tag--info {
             background-color: #616161;
         }
         &.el-tag--warning {
-            background-color: $color-warning;
+            background-color: $--color-warning;
         }
         &.el-tag--danger {
-            background-color: $color-danger;
+            background-color: $--color-danger;
         }
     }
 }
